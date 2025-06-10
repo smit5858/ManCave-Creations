@@ -1,0 +1,59 @@
+.featured{
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fea-title h1{
+  margin: 25px 0;
+  font-size: 35px;
+  font-weight: 100;
+}
+
+.fea-products{
+  display: grid;
+  grid-template-columns: repeat(4, .2fr); /* 4 items per row */
+  gap: 0;
+  align-self: center;
+  justify-self:center;
+}
+
+.fea-product{
+  border: 1px solid rgb(224, 224, 224);
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fea-product img {
+  width: 100%; /* Ensure image takes up full width of the product container */
+  height: auto; /* Maintain aspect ratio of the image */
+}
+
+.fea-product h2 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.fea-product p {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.fea-product .favorite {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.fea-product .favorite:hover {
+  color: #000;
+}

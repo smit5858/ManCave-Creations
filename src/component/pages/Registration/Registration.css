@@ -1,0 +1,179 @@
+.reg-form {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  padding: 20px;
+  border-radius: 8px;
+  /* max-width: 800px;  */
+}
+
+.reg-container.fst {
+  width: 100%; /* Ensure fst class takes full width */
+}
+
+.reg-container.sec {
+  width: 100%; /* Match width of fst class */
+  margin-top: 30px; /* Add margin-top to separate sections */
+}
+
+.reg-container h2 {
+  font-size: 24px;
+  font-weight: 100;
+  margin: 0 0 20px;
+}
+
+.reg-container p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.reg-container p span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.reg-form-com {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  width: 100%; /* Ensure form takes full width */
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Ensure form fields take full width */
+  gap: 15px; /* Add gap between form fields */
+}
+
+.form-con {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Ensure inputs take full width */
+}
+
+.form-con label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.form-con input {
+  width: 100%; /* Set input width to full */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-con input:focus {
+  outline: none;
+  border-color: #007bff; /* Add focus effect for better UX */
+}
+
+.form-con select {
+  width: 100%; /* Full width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #fff; /* Match input background */
+  appearance: none; /* Remove default arrow */
+  -webkit-appearance: none; /* Remove default arrow for Safari */
+  -moz-appearance: none; /* Remove default arrow for Firefox */
+  cursor: pointer;
+}
+
+/* Add a custom dropdown arrow */
+.form-con select {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23333'%3E%3Cpath d='M7.293 11.707a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L8 9.586 4.707 6.293a1 1 0 0 0-1.414 1.414l4 4z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+
+/* Focus state for select */
+.form-con select:focus {
+  outline: none;
+  border-color: #007bff; /* Match input focus state */
+}
+
+/* Custom CSS for Flatpickr calendar */
+.flatpickr-calendar {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.flatpickr-day.selected {
+  background-color: transparent;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  color: #007bff;
+}
+
+.flatpickr-day.today {
+  border: 2px solid #007bff;
+  border-radius: 50%;
+}
+
+.flatpickr-day.today.selected {
+  background-color: transparent;
+  border: 2px solid #007bff;
+  color: #007bff;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submit-btn {
+  min-height: 50px;
+  min-width: 300px;
+  border-radius: 50px;
+  border: 1px solid black;
+  background-color: #000;
+  color: white;
+}
+
+.submit-btn:hover {
+  color: #000;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+/* Media Queries for responsiveness */
+
+/* Tablet and below (768px or less) */
+@media (max-width: 768px) {
+  .reg-form {
+    margin: 10%;
+    padding: 15px;
+  }
+
+  .reg-form-com{
+    flex-direction: column;
+  }
+  
+  .reg-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .reg-container p {
+    font-size: 0.875rem;
+  }
+
+  .form-con label {
+    font-size: 0.875rem;
+  }
+
+  .form-con input,
+  .form-con select {
+    font-size: 0.875rem;
+    padding: 10px;
+  }
+
+  .submit-btn {
+    height: 45px;
+    font-size: 0.875rem;
+  }
+}

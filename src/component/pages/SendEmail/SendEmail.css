@@ -1,0 +1,78 @@
+
+.eu-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  /* width: 100%; */
+  display: grid;
+  margin-left: 200px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 100;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+input, select, textarea {
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.eu-phone-container {
+  display: flex;
+  gap: 10px;
+}
+
+.eu-phone-container select, .eu-phone-container input {
+  flex: 1;
+}
+
+.eu-submit-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.eu-submit-btn:hover {
+  background-color: #333;
+}
+
+.eu-note {
+  font-size: 12px;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+
+.eu-note i {
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .eu-container {
+    margin-left: 0;
+
+  }
+}

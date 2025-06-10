@@ -1,0 +1,52 @@
+/* Style for the swiper container */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;
+  }
+  
+  /* Basic styles for swiper slides */
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Ensure images are fully responsive */
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Optional: Customize pagination and navigation styles */
+  .swiper-pagination {
+    bottom: 10px !important; /* Position pagination towards the bottom */
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #fff; /* Change navigation button color */
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    height: 550px;
+    width: 100%;
+    object-fit: contain;
+  }
+

@@ -1,0 +1,312 @@
+.log-form {
+  display: flex;
+  flex-direction: row;
+  margin-left: 9.3vw;
+  margin-right: 9.3vw;
+  align-items: center;
+  justify-content: space-between;
+  /* padding-bottom: 92px;
+  padding-top: 64px; */
+  /* min-width: calc(100vh - 236px); */
+  min-height: 500px;
+}
+
+.component,
+.sec-component {
+  display: flex;
+  flex-direction: column;
+  width: 75%; /* Adjust width for component */
+  height: 100%; 
+}
+
+.sec-component {
+  width: 25%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f5f3;
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+
+  align-items: baseline;
+  width: 75%;
+}
+
+.component__title {
+  font-size: 24px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 32px;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #000;
+  margin-bottom: 16px;
+}
+
+.component__text {
+  font-size: 16px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.google-btn {
+  height: 51.6625px;
+
+  width: 697.487px;
+  border: 1px solid #000000;
+  background-color: white;
+  margin: 0 0 16px 0;
+  padding: 13px 13px 13px 13px;
+  border-radius: 1536px;
+  display: flex;
+  align-items: center; /* Align the image and text */
+  justify-content: center;
+}
+
+.googlelogo {
+  width: 22px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.googlelogo {
+  width: 22px;
+  height: 24px;
+}
+
+.component__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Added consistent spacing between form elements */
+  width: 100%;
+}
+
+.email,
+.password {
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.email label,
+.password label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.email input,
+.password input {
+  width: 95%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.email input:focus,
+.password input:focus {
+  border-color: #000;
+  outline: none;
+}
+
+.email input::placeholder,
+.password input::placeholder {
+  color: #aaa;
+}
+
+.email input[type="email"],
+.password input[type="password"] {
+  box-sizing: border-box;
+}
+
+.email input:invalid:focus,
+.password input:invalid:focus {
+  border-color: red;
+}
+
+.email input:valid:focus,
+.password input:valid:focus {
+  border-color: #000;
+  background-color: #e8f0fe;
+}
+
+.button_container {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  padding-left: 77%;
+}
+
+.button_container p {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.button_container p:nth-child(3) {
+  font-size: 12px;
+  margin-top: 5px;
+  text-decoration: underline;
+  margin:  10px 0;
+}
+
+.button_container .side-btn .login-btn {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #000000;
+  background-color: #000;
+  padding: 13px 13px 13px 13px;
+  border-radius: 1536px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button_container .side-btn .login-btn:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sec-component p {
+  font-size: 10px;
+}
+
+.sec-component ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sec-component ul li {
+  font-size: 14px;
+  padding: 20px 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1140px) {
+  .log-form {
+    flex-direction: column;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .component, 
+  .sec-component {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .component__title {
+    font-size: 1.75rem;
+  }
+
+  .component__text {
+    font-size: 1rem;
+  }
+
+  .button_container {
+    align-items: center;
+  }
+
+  .side-btn .login-btn {
+    width: 100%;
+  }
+
+  .sec-component {
+    margin-top: 20px;
+  }
+
+  .sec-component p {
+    font-size: 1rem;
+  }
+
+  .sec-component ul li {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .log-form {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .component__title {
+    font-size: 1.5rem;
+  }
+
+  .component__form {
+    width: 400px;
+  }
+  
+  .sec-component{
+    /* width: 100px; */
+    margin: 0;
+  }
+
+  .component__text {
+    font-size: 0.875rem;
+  }
+
+  .email input,
+  .password input {
+    padding: 10px;
+  }
+
+  .button_container .side-btn .login-btn {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .log-form {
+    padding: 10px;
+  }
+
+  .component__title {
+    font-size: 1.25rem;
+  }
+
+  .component__text {
+    font-size: 0.75rem;
+  }
+
+  .email input,
+  .password input {
+    font-size: 0.875rem;
+    padding: 8px;
+  }
+
+  .button_container .side-btn .login-btn {
+    height: 40px;
+  }
+
+  .sec-component {
+    /* padding: 15px; */
+  }
+
+  .sec-component p {
+    font-size: 0.75rem;
+  }
+
+  .sec-component ul li {
+    font-size: 0.875rem;
+  }
+}

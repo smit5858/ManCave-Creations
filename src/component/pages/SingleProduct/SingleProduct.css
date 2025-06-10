@@ -1,0 +1,234 @@
+.SingleProduct {
+  display: flex;
+  font-family: "Louis Vuitton Web", "Louis Vuitton Web Fallback", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.4px;
+  line-height: 24px;
+}
+
+.sin-pro {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: calc(100%-2);
+}
+
+.sin-pro:nth-child(1) {
+  margin:0 40px;
+}
+
+.img-container {
+  height: 700px;
+  overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.img {
+  height: 700px;
+  width: 700px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.sin-pro.sticky {
+  position: sticky;
+  top: 200px; /* Stick to the top of the viewport */
+  height: 100vh;/* Full height of the viewport */
+  overflow-y: auto; /* Allow vertical scrolling if needed */
+}
+
+.pro-name {
+  font-size: 28px;
+  margin: 20px;
+}
+
+.pro-price {
+  font-size: 18px;
+  color: rgb(62, 62, 62);
+  font-weight: 100;
+  margin: 20px;
+}
+
+.pro-price p {
+  font-size: 14px;
+  color: rgb(199, 199, 199);
+  font-weight: 100;
+}
+
+.pro-size {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.pro-size .size-text {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.sizes-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.size-btn {
+  padding-right: 20px;
+  margin-bottom: 10px;
+}
+
+.size-btn button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid black;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.size-btn button:hover {
+  background-color: black;
+  color: white;
+}
+
+.selected-size.active {
+  background-color: black;
+  color: white;
+  border: 1px solid transparent;
+  
+}
+
+.pro-buy {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 40px;
+
+}
+
+.ser-btn{
+  width: 360px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+}
+
+.ser-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.buy-btn {
+  width: 360px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+}
+
+.buy-btn:hover {
+  /* background-color: black;
+  color: white; */
+  outline: 1px solid black;
+  transition: border 0.3s cubic-bezier(0.39, 0.575, 0.565, 1), box-shadow 0.3s cubic-bezier(0.39, 0.575, 0.565, 1), color 0.3s cubic-bezier(0.39, 0.575, 0.565, 1), background 0.3s cubic-bezier(0.39, 0.575, 0.565, 1), box-shadow 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.hr {
+  margin: 10px;
+     
+}
+
+.pro-des, .pro-mat, .pro-care {
+  margin: 10px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pro-des-text {
+  
+  margin: 10px 20px;
+}
+
+.plus-icon {
+  
+  padding: 0 0 0 20px; 
+}
+
+@media  (max-width: 768px) {
+  .SingleProduct {
+    flex-direction: column;
+    padding: 0;
+  }
+  
+  .sin-pro {
+    /* width: 100%; */
+  }
+
+  .sin-pro.sticky {
+    
+    /* margin-left:50px; */
+  }
+  
+  .img-container {
+    height: 500px;
+  }
+  
+  .img {
+    height: auto;
+    width: auto;
+  }
+  
+  .pro-name {
+    font-size: 24px;
+    
+  }
+  
+  .pro-price {
+    font-size: 16px;
+  }
+  
+  .pro-price p {
+    font-size: 12px;
+  }
+  
+  .pro-size .size-text {
+    font-size: 16px;
+  }
+  
+  .size-btn button {
+    height: 30px;
+    width: 30px;
+  }
+  
+  .pro-buy {
+    margin: 10px 20px;
+  }
+  
+  .ser-btn, .buy-btn {
+    width: 320px;
+    height: 40px;
+    font-size: 14px;
+  }
+  
+  .pro-des, .pro-mat, .pro-care {
+    margin: 10px;
+  }
+  
+  .pro-des-text {
+    margin: 10px 20px;
+  }
+  
+  .plus-icon {
+    padding: 0 0 0 20px;
+  }
+}

@@ -1,0 +1,101 @@
+.help-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
+    border-radius: 12px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6; /* Increased line height for better readability */
+  }
+  
+  .help-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .help-description {
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #555;
+  }
+  
+  .help-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Space out boxes evenly */
+    margin: -10px; /* Adjust margin for proper spacing */
+  }
+  
+  .help-category {
+    width: calc(30% - 20px); /* Set width for three boxes in a row */
+    margin: 10px; /* Set margin for spacing */
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for animation */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .help-category:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);  
+  }
+  
+  .category-icon {
+    font-size: 40px;
+    color: #337ab7;
+    margin-bottom: 15px;
+  }
+  
+  .help-category-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .help-category ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .faq-item {
+    margin-bottom: 10px;
+    color: #337ab7;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .faq-item:hover {
+    color: #23527c;
+  }
+  
+  .faq-answer {
+    margin-top: 10px;
+    padding: 10px;
+    background: #e9f7fe;
+    border-left: 4px solid #337ab7;
+    border-radius: 5px;
+    transition: max-height 0.4s ease;
+    overflow: hidden;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 900px) {
+    .help-category {
+      width: calc(50% - 20px);  
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .help-category {
+      width: 100%;  
+    }
+  }
+  

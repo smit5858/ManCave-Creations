@@ -6,7 +6,7 @@ import { useAccount } from "../../context/AccountContext";
 import { useCart } from "../../context/CartContext";
 import { useNavigate } from "react-router-dom";
 import { createOrder, updateUser } from "../../services/orderServices";
-import MasterCard from "../../../assets/Master-card.png";
+import MasterCard from "../../../assets/Master-Card.png";
 import VisaCard from "../../../assets/visa.png";
 
 const Checkout = () => {

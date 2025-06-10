@@ -104,7 +104,7 @@ const Cart = () => {
             <img
               alt="Cash on Delivery"
               height="20"
-              src=""    
+              src="https://www.abcd.png"    
               width="50"
             />
             <img
